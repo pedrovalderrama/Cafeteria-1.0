@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-// lelelele 
 Route::get('/', function () {
     return view('index');
 });
