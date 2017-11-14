@@ -1,0 +1,12 @@
+1) Buscar y agregar
+
+$this->load->view(
+
+2) Usar "replace" simple de sublime text con regex
+
+<\?.*\?>
+
+3) cambiar extension
+
+.php a .html
+
