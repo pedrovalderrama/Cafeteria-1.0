@@ -1,0 +1,376 @@
+<!-- Page Content -->
+<div class="container">
+   <div class="row" style="margin-top:100px;">
+      <div class="col-md-12">
+         <!-- tab navigation -->
+         
+         <ul class="nav nav-tabs">
+            <li class="</a></li>
+            <li class="</a></li>
+            <li class="</a></li>
+            <li class="</a></li>
+         </ul>
+
+         <!-- tab sections -->
+         <div class="tab-content">
+            <!-- General setting tab -->
+            <div class="tab-pane fade in " id="setting">
+               <h1></h1>
+               <p></p>
+               
+                 <div class="form-group col-md-6">
+                   <label for="companyName"></label>
+                   <input type="text" value="">
+                 </div>
+                 <div class="form-group col-md-6">
+                    <label for="logo"></label>
+                    <input type="file" name="userfile" id="logo">
+                    
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label for="phone"></label>
+                   <input type="text" value="">
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label for="currency"></label>
+                   <input type="text" value="">
+                 </div>
+                 <div class="form-group col-md-3">
+                   <label for="DefaultDiscount"></label>
+                   <input type="text" value="">
+                 </div>
+                 <div class="form-group col-md-3">
+                   <label for="DefualtTax"></label>
+                   <input type="text" value="">
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label for="numberDecimal"></label>
+                   <select class="form-control" name="decimals" id="numberDecimal">
+                      <option value="1" >0.1</option>
+                      <option value="2" >0.01</option>
+                      <option value="3" >0.001</option>
+                   </select>
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label>
+                     <input type="hidden" name="keyboard" value="0" />
+                     <input type="checkbox" name="keyboard" value="1" >
+                     <span class="label-text"></span>
+                   </label>
+                 </div>
+                 <div class="form-group col-md-6">
+                   <label>
+                      <select name="timezone" class="form-control">
+                         <option value="0"></option>
+                         
+                           <option value=">
+                             
+                           </option>
+                         
+                       </select>
+                   </label>
+                 </div>
+
+                 <div class="col-md-6">
+                    <h4></h4>
+                    <textarea id="summernote" name="receiptheader"></textarea>
+                  </div>
+                  <div class="form-group col-md-6">
+                     <h4></h4>
+                     <textarea  id="summernote2" name="receiptfooter"></textarea>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label data-toggle="collapse" data-target="#collapseStripe">
+                      <input type="hidden" name="stripe" value="0" />
+                      <input type="checkbox" name="stripe" value="1" >
+                      <span class="label-text">Stripe</span>
+                    </label>
+                  </div>
+                  <div id="collapseStripe" class="panel-collapse collapse ">
+                     <div class="panel-body">
+                       <div class="form-group col-md-6">
+                          <label for="stripe_secret_key">stripe secret key</label>
+                          <input type="text" value="" name="stripe_secret_key" class="form-control" id="stripe_secret_key" placeholder="stripe secret key">
+                       </div>
+                       <div class="form-group col-md-6">
+                          <label for="stripe_publishable_key">stripe publishable key</label>
+                          <input type="text" value="" name="stripe_publishable_key" class="form-control" id="stripe_publishable_key" placeholder="stripe publishable key">
+                       </div>
+                     </div>
+                  </div>
+                  <div class="form-group col-md-12">
+                     <h4></h4>
+                     <label class="themesPick col-md-3">
+                        <input type="radio" name="theme" value="Light" />
+                        <img src="assets/img/Light-theme.jpg" alt="Light-theme">
+                      </label>
+                      <label class="themesPick col-md-3">
+                        <input type="radio" name="theme" value="Dark"  />
+                        <img src="assets/img/Dark-theme.jpg" alt="Dark-theme">
+                      </label>
+                  </div>
+                 <div class="col-md-12">
+                    <button type="submit" class="btn btn-add btn-lg"></button>
+                 </div>
+               
+            </div>
+            <!-- users tab -->
+            <div class="tab-pane fade in " id="users">
+               <table class="table">
+                  <tr>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                  </tr>
+                  
+                   <tr>
+                      <td><img class="img-circle topbar-userpic hidden-xs" src="" width="30px" height="30px"></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><div class="btn-group">
+                            
+                            <a class="btn btn-default" href="settings/editUser/"><i class="fa fa-pencil"></i></a>
+                          </div>
+                       </td>
+                   </tr>
+                
+               </table>
+               <!-- Button trigger modal -->
+               <button type="button" class="btn btn-add btn-lg" data-toggle="modal" data-target="#AddUser">
+                  
+               </button>
+            </div>
+            <!-- Stores tab -->
+            <div class="tab-pane fade in " id="stores">
+               <table class="table">
+                  <tr>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                  </tr>
+                  
+                   <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><div class="btn-group">
+                            <a class="btn btn-default" "><i class="fa fa-times"></i></a>
+                            <a class="btn btn-default" href="stores/edit/"><i class="fa fa-pencil"></i></a>
+                          </div>
+                       </td>
+                   </tr>
+                   
+                  </table>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-add btn-lg" data-toggle="modal" data-target="#AddStore">
+                     
+                  </button>
+            </div>
+            <!-- Warehouse tab -->
+            <div class="tab-pane fade in " id="warehouses">
+               <table class="table">
+                  <tr>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                     <th></th>
+                  </tr>
+                  
+                   <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><div class="btn-group">
+                            <a class="btn btn-default" href="warehouses/delete/"><i class="fa fa-times"></i></a>
+                            <a class="btn btn-default" href="warehouses/edit/"><i class="fa fa-pencil"></i></a>
+                          </div>
+                       </td>
+                   </tr>
+                   
+                  </table>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-add btn-lg" data-toggle="modal" data-target="#AddWarehouse">
+                     
+                  </button>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- /.container -->
+<!-- add user Modal -->
+<div class="modal fade" id="AddUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      
+      <div class="modal-body">
+            <div class="form-group">
+             <label for="username"> *</label>
+             <input type="text" name="username" class="form-control" id="username" placeholder="" required>
+           </div>
+           <div class="form-group">
+             <label for="firstname"> *</label>
+             <input type="text" name="firstname" class="form-control" id="firstname" placeholder="" required>
+           </div>
+           <div class="form-group">
+             <label for="lastname"></label>
+             <input type="text" name="lastname" class="form-control" id="lastname" placeholder="">
+           </div>
+           <div class="form-group">
+               <label for="role"> *</label><br>
+               <label class="radio-inline">
+                 <input type="radio" name="role" id="role" value="admin" checked> 
+               </label>
+               <label class="radio-inline">
+                 <input type="radio" name="role" id="role" value="sales"> 
+               </label>
+            </div>
+           <div class="form-group">
+             <label for="email"></label>
+             <input type="email" name="email" class="form-control" id="email" placeholder="">
+           </div>
+           <div class="form-group">
+             <label for="password"> *</label>
+             <input type="password" name="password" class="form-control" id="password" placeholder="" required>
+          </div>
+           <div class="form-group">
+             <label for="confirm_password"> *</label>
+             <input type="password" name="PasswordRepeat" class="form-control" id="confirm_password" placeholder="" required>
+           </div>
+           <div class="form-group">
+             <label for="Avatar"></label>
+             <input type="file" name="userfile" id="Avatar">
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        <button type="submit" class="btn btn-add"></button>
+      </div>
+   
+    </div>
+ </div>
+</div>
+<!-- /.Modal -->
+
+
+<!-- add store Modal -->
+<div class="modal fade" id="AddStore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      
+      <div class="modal-body">
+            <div class="form-group">
+             <label for="StoreName"> *</label>
+             <input type="text" name="name" class="form-control" id="StoreName" placeholder="" required>
+           </div>
+           <div class="form-group">
+             <label for="email"></label>
+             <input type="email" name="email" class="form-control" id="email" placeholder="">
+          </div>
+           <div class="form-group">
+             <label for="StorePhone"></label>
+             <input type="text" name="phone" class="form-control" id="StorePhone" placeholder="">
+           </div>
+           <div class="form-group">
+             <label for="Country"></label>
+             <input type="text" name="country" class="form-control" id="Country" placeholder="">
+           </div>
+           <div class="form-group">
+             <label for="City"></label>
+             <input type="text" name="city" class="form-control" id="City" placeholder="">
+           </div>
+           <div class="form-group">
+             <label for="Adresse"></label>
+             <input type="text" name="adresse" class="form-control" id="Adresse" placeholder="">
+           </div>
+           <div class="form-group">
+             <label for="CustomeFooter"></label>
+             <input type="text" name="footer_text" class="form-control" id="CustomeFooter" placeholder="">
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        <button type="submit" class="btn btn-add"></button>
+      </div>
+   
+    </div>
+ </div>
+</div>
+<!-- /.Modal -->
+
+<!-- add warehouse Modal -->
+<div class="modal fade" id="AddWarehouse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      
+      <div class="modal-body">
+            <div class="form-group">
+             <label for="WarehouseName"> *</label>
+             <input type="text" name="name" class="form-control" id="WarehouseName" placeholder="" required>
+           </div>
+           <div class="form-group">
+             <label for="WarehousePhone"></label>
+             <input type="text" name="phone" class="form-control" id="WarehousePhone" placeholder="">
+          </div>
+           <div class="form-group">
+             <label for="email"></label>
+             <input type="email" name="email" class="form-control" id="email" placeholder="">
+          </div>
+           <div class="form-group">
+             <label for="Adresse"></label>
+             <input type="text" name="adresse" class="form-control" id="Adresse" placeholder="">
+           </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"></button>
+        <button type="submit" class="btn btn-add"></button>
+      </div>
+   
+    </div>
+ </div>
+</div>
+<!-- /.Modal -->
+
+<script type="text/javascript">
+
+/******** passwors confirmation validation ****************/
+
+var currency = document.getElementById("currency");
+
+function validatecurrency(){
+  if(currency.value.length < 3) {
+    currency.setCustomValidity("The Currency code must be at least 3 characters length");
+  } else {
+    currency.setCustomValidity('');
+  }
+}
+if(currency) currency.onchange = validatecurrency;
+
+$('.collapse').collapse()
+</script>

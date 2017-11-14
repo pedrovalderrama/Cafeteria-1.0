@@ -1,0 +1,150 @@
+<script type="text/javascript">
+$(function() {
+
+   $('#Type').on('change', function() {
+     if( this.value == 1 ) //if service
+     {
+        $("#pushaceP").slideUp();
+        $("#alertqty").slideUp();
+        $("#supply").slideUp();
+        $("#UnitP").slideUp();
+     } else if ( this.value == 2 ) {
+        $("#pushaceP").slideUp();
+        $("#alertqty").slideUp();
+        $("#supply").slideUp();
+        $("#UnitP").slideUp();
+     } else {
+        $("#pushaceP").slideDown();
+        $("#alertqty").slideDown();
+        $("#supply").slideDown();
+        $("#UnitP").slideDown();
+     }
+   });
+   if(  == 1 ) //if service
+   {
+     $("#pushaceP").slideUp();
+     $("#supply").slideUp();
+     $("#alertqty").slideUp();
+     $("#UnitP").slideUp();
+  } else if (  == 2 ) {
+     $("#pushaceP").slideUp();
+     $("#alertqty").slideUp();
+     $("#supply").slideUp();
+     $("#UnitP").slideUp();
+   } else {
+     $("#pushaceP").slideDown();
+     $("#supply").slideDown();
+     $("#alertqty").slideDown();
+     $("#UnitP").slideDown();
+   }
+
+});
+</script>
+<div class="container container-small">
+   <div class="row" style="margin-top:100px;">
+      <a class="btn btn-default float-right" href="#" onclick="history.back(-1)"style="margin-bottom:10px;">
+         <i class="fa fa-arrow-left"></i> </a>
+      
+         <div class="form-group">
+         <label for="Type"></label>
+         <select class="form-control" name="type" id="Type">
+            <option value="0" </option>
+            <option value="1" </option>
+            <option value="2" </option>
+         </select>
+         </div>
+         <div class="form-group">
+         <label for="ProductCode"></label>
+         <input type="text" name="code" maxlength="30" Required value="">
+         <p class="red"></p>
+        </div>
+        <div class="form-group">
+         <label for="ProductName"></label>
+         <input type="text" name="name" maxlength="25" Required value="">
+        </div>
+        <div class="form-group">
+         <label for="Category"></label>
+         <select class="form-control" value="" name="category" id="Category">
+            <option></option>
+            
+               <option </option>
+            
+         </select>
+        </div>
+        <div class="form-group" id="supply">
+           <label for="Supplier"></label>
+           <select class="form-control" name="supplier" id="Supplier">
+             <option></option>
+             
+                <option </option>
+             
+          </select>
+       </div>
+        <div class="form-group" id="pushaceP">
+         <label for="PurchasePrice">)</label>
+         <input type="number" step="any" Required name="cost" value="">
+        </div>
+        <div class="form-group">
+          <label for="Tax"></label>
+          <input type="text" name="tax" maxlength="10" value="">
+        </div>
+        <div class="form-group">
+           <label for="taxType"></label>
+           <select class="form-control" name="taxmethod" id="taxType">
+             <option value="0" </option>
+             <option value="1" </option>
+           </select>
+        </div>
+        <div class="form-group">
+         <label for="Price">)</label>
+         <input type="number" step="any" Required name="price" value="">
+        </div>
+        <div class="form-group" id="UnitP">
+          <label for="Unit"></label>
+          <input type="text" step="any" name="unit" value="">
+        </div>
+        <div class="form-group" id="alertqty">
+          <label for="AlertQt"></label>
+          <input type="number" value="">
+        </div>
+        <div class="form-group">
+         <label for="exampleInputFile"></label>
+         <input type="file" name="userfile" id="ImageInput">
+        </div>
+        <div class="form-group">
+         <label for="ProductDescription"></label>
+         <textarea id="summernote" name="description"></textarea>
+      </div>
+        <div class="form-group">
+           <div class="btn-group white" data-toggle="buttons">
+              <p class="help-block"></p>
+              <label class="btn color01">
+                 <input type="radio" name="color" id="option1" value="color01" autocomplete="off" > C1
+              </label>
+              <label class="btn color02">
+                 <input type="radio" name="color" id="option2" value="color02" autocomplete="off" > C2
+              </label>
+              <label class="btn color03">
+                 <input type="radio" name="color" id="option3" value="color03" autocomplete="off" > C3
+              </label>
+              <label class="btn color04">
+                 <input type="radio" name="color" id="option4" value="color04" autocomplete="off" > C4
+              </label>
+              <label class="btn color05">
+                 <input type="radio" name="color" id="option5" value="color05" autocomplete="off" > C5
+              </label>
+              <label class="btn color06">
+                 <input type="radio" name="color" id="option6" value="color06" autocomplete="off" > C6
+              </label>
+              <label class="btn color07">
+                 <input type="radio" name="color" id="option7" value="color07" autocomplete="off" > C7
+              </label>
+           </div>
+           
+         </div>
+      <div class="form-group">
+         <button type="submit" class="btn btn-green col-md-6 flat-box-btn"></button>
+      </div>
+      
+   </div>
+</div>
